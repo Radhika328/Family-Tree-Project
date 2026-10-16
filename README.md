@@ -27,3 +27,5 @@ On Windows, run the compiled program with:
 
 Screenshot
 See output.png for a screenshot of the program running in the terminal.
+[Family Tree program output](output.png)
+

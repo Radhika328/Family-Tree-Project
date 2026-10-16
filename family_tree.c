@@ -159,5 +159,3 @@ void free_family_tree(Person *people[], int count)
 }
    
 
-
-

@@ -93,6 +93,14 @@ void print_family_relationships(const Person *me)
            me->mother->mother->age);
 }
 
+void free_family_tree(Person *people[], int count)
+{
+    for (int i = 0; i < count; i++)
+    {
+        free(people[i]);
+    }
+} 
+
    int main(void)
 {
     char name[50];
@@ -135,6 +143,18 @@ void print_family_relationships(const Person *me)
     
     print_family_relationships(me);
 
+    Person *people[] = {
+    paternal_grandfather,
+    paternal_grandmother,
+    maternal_grandfather,
+    maternal_grandmother,
+    father,
+    mother,
+    me
+};
+
+    free_family_tree(people, 7);
+    printf("Memory cleanup completed");
     return 0;
 }
    

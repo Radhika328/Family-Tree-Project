@@ -20,7 +20,7 @@ This project represents a three-generation family tree using the C programming l
  How to Compile and Run
 
  Open a terminal in the project folder and run.
--gcc family_tree.c -o family_tree
+ gcc family_tree.c -o family_tree
 
 On Windows, run the compiled program with:
 .\family_tree.exe
